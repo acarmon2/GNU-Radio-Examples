@@ -118,7 +118,7 @@ class Sweep(gr.top_block):
         self.connect((self.analog_noise_source_x_0, 0), (self.analog_wfm_tx_0, 0))
 
     def set_Freq(self, Freq):
-        self.Freq = Freq 
+        self.Freq = Freq
         self.uhd_usrp_sink_0.set_center_freq(self.Freq, 0)
 
 if __name__ == '__main__':
@@ -144,12 +144,15 @@ if __name__ == '__main__':
         time.sleep(0.1)
         tb.stop()
         tb.wait()
-        
-        #time.sleep(0.1)    
+
+
+        #Comentario bobo a añadir
+
+        #time.sleep(0.1)
         #tb.stop()
-       
+
         #tb = Jammer(106.9e6)
         #tb.Start(True)
-        #time.sleep(0.1)    
+        #time.sleep(0.1)
         #tb.stop()
         #tb.wait()
